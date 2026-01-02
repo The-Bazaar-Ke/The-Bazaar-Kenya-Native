@@ -1,13 +1,16 @@
 {
-  "name": "@the-bazaar-native/source",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
+  "name": "the-bazaar-kenya-native",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {},
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "main": "pnpm --filter main-app dev",
+    "vendor": "pnpm --filter vendor-portal dev"
+  },
   "devDependencies": {
-    "@nx/js": "22.3.3",
-    "@nx/workspace": "22.3.3",
-    "nx": "22.3.3"
+    "typescript": "^5.3.3",
+    "prettier": "^3.2.5"
   }
 }
